@@ -1,19 +1,27 @@
 <template>
-    <div class="main-slide">
-        <img src="../assets/Home-Slider.png" alt="">
+    <div class="slide">
+        <transition name="slide">
+            <slot />
+        </transition>
     </div>
 </template>
 
 <script>
-export default {
-    name: "Slide-carousel",
-    components:{},
-}
+export default {}
 </script>
 
 <style>
-.main-slide img{
-    width: 100%;
-    height: 110vh;
+/*Animation*/
+.slide-enter-active,
+.slide-leave-active{
+    transition: opacity 0.7s ease-in-out;
+}
+.side-enter-from,
+.slide-leave-to{
+    opacity: 0;
+}
+.slide-enter-to,
+.slide-leave-from{
+    opacity: 1;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="carousel">
-        <slot :currentSlide="curtentSlide" />
+        <slot :currentSlide="currentSlide" />
 
         <!--Navigation-->
         <div v-if="navEnabled" class="navigate">
