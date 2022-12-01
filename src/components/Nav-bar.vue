@@ -7,7 +7,6 @@
             <ul>
                 <li><a href="#" class="Active">INICIO</a></li>
                 <li><a href="#">PRODUCTOS</a></li>
-                <li><a href="#">NOSOTROS</a></li>
                 <li><a href="#">CONTACTO</a></li>
             </ul>
         </div>
@@ -20,7 +19,7 @@
 <style scoped>
 .nav{
     display: flex;
-    position: fixed;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -37,11 +36,11 @@
     text-decoration: none;
     display: inline-block;
     list-style: none;
-    padding: 0 5px;
+    padding: 5px 5px;
+    margin: 0 5px;
     color: #000000;
     font-size: 15px;
     font-weight: bold;
-    padding: 5px;
 }
 .main-menu a:hover{
     color: #B7625B;

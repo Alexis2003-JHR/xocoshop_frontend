@@ -17,7 +17,9 @@ export default{
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+/*Allan & Nunito font*/
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
 * {
   margin: 0;
 }
