@@ -98,7 +98,6 @@ export default {
 .menu-section{
   position: relative;
   width: 100%;
-  justify-content: center;
 }
 .menu-section h1{
   font-family: 'Allan', cursive;
@@ -107,43 +106,44 @@ export default {
   margin: 30px 0;
 }
 .targets{
+  max-width: 100%;
+  widows: 100%;
   height: 86vh;
+
+  /*Grid position*/
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-areas: 
+  "a a a a z b b b b"
+  "a a a a z b b b b"
+  "c c c c z d d d d"
+  "c c c c z d d d d";
 }
 .target{
   position: absolute;
-  width: 100%;
-  align-items: center;
-  cursor: pointer;
-}
-.target:hover{
-  transition: .6s;
-  z-index: 2;
 }
 .tgt-1{
   top: 130px;
   z-index: 1;
+  grid-area: z;
+  background-color: antiquewhite;
 }
 .tgt-1 img{
   width: 314px;
   height: 466px;
-  top: 0;
 }
 .tgt-2 img, .tgt-2{
   width: 288px;
   height: 387px;
-  top: 60px;
-  left: 300px;
 }
 .tgt-3 img, .tgt-3{
   width: 308px;
   height: 387px;
-  top: 420px;
-  left: 770px;
 }
 .tgt-4 img, .tgt-4{
   width: 362px;
   height: 300px;
-  top: 40px;
-  left: 750px;
 }
 </style>
